@@ -30,6 +30,8 @@ By clicking on the images, users will be directed to the specified product page,
 -   Unique design, created entirely from scratch, ensuring a distinctive look not seen elsewhere.
 -   High contrast and modern-looking icons and fonts.
 -   Ideal for developers looking to add and test various store functionalities.
+-   Responsive design
+
 
 ## Built With
 
