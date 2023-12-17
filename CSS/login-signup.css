@@ -1,0 +1,161 @@
+h3 {
+    color: var(--orang);
+}
+.sign-up {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.over-text {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    margin: 0.4rem 0rem 0.4rem 1rem;
+    font-size: 1rem;
+}
+
+.sign-up > p {
+    font-size: 1rem;
+    max-width: 200px;
+}
+/*Checkbox and radio for the sign up */
+.radio-container,
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    max-width: 14rem;
+    margin-top: 0.5rem;
+}
+.radio-container label,
+.checkbox-container label {
+    cursor: pointer;
+    display: flex;
+}
+.checkbox-container input[type="checkbox"],
+.radio-container input[type="radio"] {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+}
+.checkbox-container label::before {
+    content: "";
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.15em solid var(--orang);
+    margin-right: 0.5rem;
+}
+.radio-container label::before {
+    content: "";
+    width: 0.9em;
+    height: 0.9em;
+    border: 0.15em solid var(--orang);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.checkbox-container label:hover::before,
+.checkbox-container input[type="checkbox"]:hover + label::before,
+.radio-container label:hover::before,
+.radio-container input[type="radio"]:hover + label::before {
+    background-color: #f85b007c;
+}
+.checkbox-container input[type="checkbox"]:checked + label::before {
+    content: "\002714";
+    background-color: var(--orang);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.radio-container input[type="radio"]:checked + label::before {
+    background-color: var(--orang);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.854);
+    border: 0.15em solid var(--orang);
+}
+.checkbox-container input[type="checkbox"]:focus + label::before,
+.radio-container input[type="radio"]:hover + label::before {
+    box-shadow: 0 0 15px white;
+}
+
+#agreements ~ label,
+#offers ~ label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+}
+#username,
+#password,
+#repeat_password,
+#email {
+    width: 14rem;
+    height: 2rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+}
+.password-requirements-toggle {
+    display: none;
+}
+
+.password-requirements-link {
+    cursor: pointer;
+    color: var(--orang);
+    display: inline-block;
+    float: right;
+    font-size: 0.7rem;
+}
+
+.password-requirements-toggle:checked ~ .password-requirements {
+    display: flex;
+    width: 12.3rem;
+    position: absolute;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    background: linear-gradient(
+        178deg,
+        rgba(46, 58, 98, 1) 100%,
+        rgb(217, 217, 217, 0.2) 80%
+    );
+}
+
+.password-requirements {
+    display: none;
+    padding: 1rem;
+    margin-top: 1.4rem;
+}
+.password-requirements > p > strong {
+    color: var(--orang);
+}
+.green {
+    background: linear-gradient(
+        180deg,
+        rgba(62, 205, 59, 0.72) 0%,
+        rgba(62, 205, 59, 0.5) 100%
+    );
+    border: 0;
+    padding: 8px 25px;
+}
+.sign-up:invalid {
+    border: 2px solid red;
+    box-shadow: none;
+}
+.sign-up-size {
+    font-size: 1rem;
+    text-decoration: none;
+}
+.sign-up-size:hover {
+    color: green;
+    transition: 300ms;
+}
+.sign-up-size-undertext {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.678);
+}
+.sign-up-size-undertext > strong {
+    color: var(--orang);
+}

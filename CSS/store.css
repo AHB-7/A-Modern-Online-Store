@@ -1,0 +1,520 @@
+h1 {
+    color: var(--www);
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+.mySlides {
+    display: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+.wide-slider-image {
+    height: 70vh;
+    width: 70vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: 1s;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+.wide-slider-image:hover {
+    filter: brightness(80%);
+}
+/* Slider beeen made by help of W4School https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    padding: 1rem;
+}
+.like-item-for-slider {
+    position: absolute;
+    z-index: 1;
+    margin-top: 1rem;
+    margin-left: 16%;
+}
+.prev,
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-top: -80px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: var(--orang);
+}
+
+.next {
+    right: 11%;
+}
+.prev {
+    left: 11%;
+}
+.prev:hover,
+.next:hover {
+    background-color: var(--www);
+    color: var(--orang);
+}
+
+.readmore-for-slider {
+    position: absolute;
+    margin-top: -3rem;
+    right: 17%;
+}
+.rating-slider {
+    bottom: 11.8em;
+    margin-left: 5.7em;
+}
+.basket-for-slider {
+    bottom: 9.8em;
+    position: relative;
+    text-align: center;
+    opacity: 1;
+}
+.slider-btn {
+    position: relative;
+    text-align: center;
+    bottom: 9em;
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: 600;
+    transition: 1s;
+}
+.slider-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2.8rem 2px;
+    background-color: var(--www);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--orang);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .prev,
+    .next,
+    .action-container-slider {
+        font-size: 11px;
+    }
+}
+.action-section-container {
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 0rem;
+}
+.show-more {
+    z-index: 1;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.show-more:hover {
+    font-size: 1.3rem;
+    color: var(--ggg);
+}
+.section-name-type {
+    border-bottom: 0.2rem var(--www) solid;
+    margin: 0 0 1rem 3rem;
+    max-width: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.cards-container {
+    overflow: hidden;
+    border: 3px var(--www) solid;
+    width: 17rem;
+    height: 30rem;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgba(71, 71, 71, 0.603);
+}
+.action-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 3rem;
+    max-width: 60rem;
+}
+.readmore-for-cards {
+    margin: 0.4rem auto auto auto;
+}
+.action-section::-webkit-scrollbar {
+    display: block;
+}
+.action-section::-webkit-scrollbar-track {
+    background-color: #d7d7d740;
+    border-radius: 5px;
+}
+
+.action-section::-webkit-scrollbar-thumb {
+    background-color: #f85b00;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+}
+.platfor-for-card {
+    position: relative;
+    right: 4.4rem;
+    top: -12.4rem;
+}
+.card-img {
+    width: 17rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(40%);
+    border-top-right-radius: 45px;
+    border-top-left-radius: 35px;
+}
+.btn-card {
+    z-index: 1;
+    position: relative;
+    top: -1rem;
+    padding: 0.5rem 2rem;
+}
+.rating-for-cards {
+    margin-top: -4rem;
+    margin-left: 1.2rem;
+}
+h2 {
+    font-size: var(--h2);
+    color: var(--orang);
+    margin: 0;
+}
+.short-info-about-the-game {
+    text-align: left;
+    margin: 1rem 0.4rem 0rem;
+    height: fit-content;
+    height: 8rem;
+}
+.short-info-about-the-game > h3 {
+    margin: 0;
+}
+.short-info-about-the-game > p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+.action-buttons-for-cards > div > p {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.action-buttons-for-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 1.3rem;
+}
+.wall {
+    height: 2.3rem;
+    width: 0.2rem;
+    background-color: var(--orang);
+    margin: 0 0.4rem;
+}
+
+.platform-card {
+    z-index: 2;
+}
+.offers-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+    gap: 2rem;
+    overflow-x: auto;
+    animation: 8s infinite;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+@keyframes offers {
+    0% {
+        justify-content: flex-start;
+    }
+    50% {
+        justify-content: center;
+    }
+    100% {
+        justify-content: flex-end;
+    }
+    50% {
+        justify-content: center;
+    }
+    0% {
+        justify-content: flex-start;
+    }
+}
+.green {
+    font-weight: 800;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.green:hover {
+    background-color: rgb(255, 255, 255);
+    font-weight: 800;
+    color: #000000;
+}
+.offer-1 {
+    width: 15rem;
+    height: 12rem;
+    backdrop-filter: blur(5px);
+    background-position: center;
+    border: 2px solid rgba(255, 255, 255, 0.811);
+    border-radius: 12px;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    opacity: 0.7;
+}
+.offer-title {
+    font-size: 2rem;
+    color: #ffffff;
+}
+.offer-2 {
+    width: 15rem;
+    height: 12rem;
+    border: 2px solid rgba(255, 255, 255, 0.811);
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    opacity: 0.8;
+}
+.offer-3 {
+    width: 15rem;
+    height: 12rem;
+    border: 2px solid rgba(255, 255, 255, 0.811);
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    opacity: 0.8;
+}
+.offer-1:hover,
+.offer-2:hover,
+.offer-3:hover {
+    opacity: 0.9;
+}
+.offers-container::-webkit-scrollbar {
+    display: block;
+}
+
+@media only screen and (max-width: 1260px) {
+    .action-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 1rem 3rem;
+    }
+    .offers-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem;
+        gap: 2rem;
+        overflow-x: auto;
+        animation: 8s infinite;
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    @keyframes offers {
+        0% {
+            justify-content: flex-start;
+        }
+        50% {
+            justify-content: center;
+        }
+        100% {
+            justify-content: flex-end;
+        }
+        50% {
+            justify-content: center;
+        }
+        0% {
+            justify-content: flex-start;
+        }
+    }
+}
+.all-games-section {
+    margin-top: 6rem;
+}
+.action-section-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+.last-section {
+    margin-bottom: 4rem;
+}
+
+#show-box {
+    display: none;
+}
+.hidden-box {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 2;
+    background-color: black;
+}
+#show-box:checked ~ .hidden-box {
+    display: grid;
+    margin: 4.5rem 0 auto 2.5rem;
+    height: 80vh;
+    width: 40vw;
+    overflow: auto;
+    position: absolute;
+}
+.one-page-effect::-webkit-scrollbar,
+.hidden-box::-webkit-scrollbar {
+    display: none;
+}
+.filter-btn {
+    max-width: 25rem;
+    background-color: var(--orang);
+    cursor: pointer;
+    position: fixed;
+    bottom: 50%;
+    left: -3rem;
+    z-index: 3;
+    rotate: 90deg; /* It appears that this attribute should work on most devices that why I'm keeping it https://caniuse.com/?search=%20%20%20%20rotate%3A%20 */
+    margin: 0;
+    transition: 0.5s;
+    border-radius: 0;
+    background-color: #ffffff;
+    color: var(--orang);
+    font-weight: 600;
+}
+.filter-btn:hover {
+    left: -2.5rem;
+}
+.text-for-selection {
+    font-size: 1rem;
+    color: var(--www);
+}
+.text-for-selection:focus,
+.text-for-selection:hover {
+    color: var(--orang);
+}
+.list-header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--yelow);
+    margin-bottom: 10px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 912px) {
+    .offers-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem;
+        gap: 2rem;
+        height: 14rem;
+        overflow-x: auto;
+        animation: offers 8s infinite;
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .wide-slider-image {
+        height: 55vh;
+        width: 80vw;
+        object-fit: cover;
+        filter: brightness(60%);
+        transition: 1s;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    .offers-container:hover {
+        animation-play-state: paused;
+    }
+    @keyframes offers {
+        0% {
+            justify-content: flex-start;
+        }
+        50% {
+            justify-content: center;
+        }
+        100% {
+            justify-content: flex-end;
+        }
+        50% {
+            justify-content: center;
+        }
+        0% {
+            justify-content: flex-start;
+        }
+    }
+    #show-box:checked ~ .hidden-box {
+        display: grid;
+        margin: 4.5rem 0 auto 2.5rem;
+        height: 80vh;
+        width: 60vw;
+        overflow: auto;
+        position: absolute;
+    }
+}

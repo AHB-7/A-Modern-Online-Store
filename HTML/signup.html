@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Join the ultimate gaming community! Sign up for free and gain access to exclusive games, competitions, and rewards. Start your gaming journey today!"
+        />
+        <title>Sign Up</title>
+        <link rel="icon" type="image/x-icon" href="../game-hub-logo.png" />
+
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="stylesheet" href="../CSS/login-signup.css" />
+        <!-- Hotjar Tracking Code for Gaming store -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 3677945, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(
+                window,
+                document,
+                "https://static.hotjar.com/c/hotjar-",
+                ".js?sv="
+            );
+        </script>
+        s
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div>
+                    <div class="for-phone">
+                        <a href="../HTML/buy-the-game.html"
+                            ><img
+                                src="../assets/shop-items-for-phone.png"
+                                alt="Bascket logo"
+                                class="shop-items-for-phone"
+                        /></a>
+                    </div>
+                    <div>
+                        <a href="../index.html">
+                            <img
+                                src="../game-hub-logo.png"
+                                alt="Game Hub logo"
+                                id="logo"
+                        /></a>
+                    </div>
+                </div>
+                <div>
+                    <form id="search-form">
+                        <a
+                            href="#"
+                            class="search-btn"
+                            onclick="document.getElementById('search-form').submit()"
+                        >
+                            <img
+                                src="../assets/searchbtn.png"
+                                alt="search button logo"
+                                class="search-btn"
+                            />
+                        </a>
+                        <input
+                            type="text"
+                            name="search"
+                            placeholder="Search..."
+                            class="search-input"
+                            id="search-input"
+                        />
+                        <label for="search-input">Search:</label>
+                    </form>
+                </div>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img
+                        id="menu-pic"
+                        src="../assets/Menu.png"
+                        alt="Hamburger logo"
+                    />
+                </label>
+
+                <div class="menu-container">
+                    <div class="for-phone line"></div>
+                    <a href="../index.html"
+                        ><img src="../assets/home.png" alt="Home logo" />Home</a
+                    >
+                    <a href="../HTML/store.html"
+                        ><img src="../assets/store.png" alt="stor logo" />
+                        Store</a
+                    >
+                    <a href="../HTML/publish.html"
+                        ><img
+                            src="../assets/push.png"
+                            alt="push logo"
+                        />Publish</a
+                    >
+                    <a href="../HTML/contact.html"
+                        ><img
+                            src="../assets/contact.png"
+                            alt="phone logo"
+                        />Contact</a
+                    >
+                    <a href="../HTML/about.html"
+                        ><img
+                            src="../assets/info.png"
+                            alt="about logo"
+                        />About</a
+                    >
+                    <a href="#" class="for-phone"
+                        ><img
+                            src="../assets/like.png"
+                            alt="heart logo"
+                        />Favorites
+                    </a>
+                    <a href="#" class="for-phone"
+                        ><img
+                            src="../assets/profil.png"
+                            alt="profile logo"
+                        />Profile</a
+                    >
+                </div>
+                <div id="icons-container">
+                    <a href="#"
+                        ><img
+                            src="../assets/logo-like.png"
+                            alt="A heart logo"
+                            class="icon"
+                    /></a>
+
+                    <a href="#"
+                        ><img
+                            src="../assets/logo-profile.png"
+                            alt="Profile avatar"
+                            class="icon"
+                    /></a>
+                    <a href="../HTML/buy-the-game.html"
+                        ><img
+                            src="../assets/logo-shop.png"
+                            alt="Bascket logo"
+                            class="icon bascket-shop"
+                    /></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="sign-up">
+                <h3>SigUp</h3>
+                <form method="post" action="/signup">
+                    <label for="username" class="over-text">Username:</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        minlength="3"
+                        required
+                    /><br />
+                    <input
+                        type="checkbox"
+                        id="password-requirements-toggle"
+                        class="password-requirements-toggle"
+                    />
+                    <label
+                        for="password-requirements-toggle"
+                        class="password-requirements-link"
+                        >Requirements!</label
+                    >
+
+                    <div class="password-requirements">
+                        <p>
+                            The password must be at least
+                            <strong>8 characters</strong> long and contain at
+                            least <strong>one uppercase</strong> letter and
+                            <strong>one number</strong>.
+                        </p>
+                    </div>
+
+                    <label for="password" class="over-text">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        minlength="8"
+                        required
+                        pattern="^(?=.*[0-9])(?=.*[A-Z]).+$"
+                    />
+                    <br />
+
+                    <label for="repeat_password" class="over-text"
+                        >Repeat Password:</label
+                    >
+                    <input
+                        type="password"
+                        id="repeat_password"
+                        name="repeat_password"
+                        minlength="8"
+                        required
+                    /><br />
+
+                    <label for="email" class="over-text">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        minlength="5"
+                        required
+                    /><br />
+                    <div class="radio-container">
+                        <input
+                            type="radio"
+                            id="agreements"
+                            name="terms"
+                            required
+                        />
+                        <label for="agreements"
+                            >Agree on the website terms red more her!</label
+                        >
+                    </div>
+                    <div class="checkbox-container">
+                        <input
+                            type="checkbox"
+                            name="recive-offers"
+                            id="offers"
+                        />
+                        <label for="offers"
+                            >Send the best sales and the last news
+                        </label>
+                    </div>
+                    <div class="login-box">
+                        <button type="submit" class="main-btn green">
+                            Sign Up
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="foot">
+                <div>
+                    <p>123 Main Street, Anytown USA 12345</p>
+                </div>
+                <div>
+                    <p>Copy Rights</p>
+                </div>
+
+                <div>
+                    <a href="#"
+                        ><img
+                            src="../assets/1.png"
+                            alt="Instagram logo"
+                            class="sosial-media-icons" /></a
+                    ><a href="#"
+                        ><img
+                            src="../assets/2.png"
+                            alt="Messenger logo"
+                            class="sosial-media-icons" /></a
+                    ><a href="#"
+                        ><img
+                            src="../assets/3.png"
+                            alt="Reddit logo"
+                            class="sosial-media-icons" /></a
+                    ><a href="#"
+                        ><img
+                            src="../assets/4.png"
+                            alt="Discord logo"
+                            class="sosial-media-icons" /></a
+                    ><a href="#"
+                        ><img
+                            src="../assets/5.png"
+                            alt="Facebook logo"
+                            class="sosial-media-icon"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

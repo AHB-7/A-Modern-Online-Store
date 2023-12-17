@@ -1,0 +1,31 @@
+main {
+    margin: 0;
+}
+.side-img-2 {
+    height: 34rem;
+    width: 25rem;
+    margin-top: 10rem;
+    margin: 4rem auto 2rem auto;
+}
+.version2 {
+    margin: 1rem auto;
+    gap: 4rem;
+}
+.txt-title {
+    width: 25rem;
+}
+.txt {
+    width: 30rem;
+}
+.actions {
+    display: flex;
+}
+@media only screen and (max-width: 1100px) {
+    .side-img-2 {
+        height: 24rem;
+        width: 18rem;
+    }
+    .txt-title {
+        width: 15rem;
+    }
+}

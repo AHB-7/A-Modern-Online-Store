@@ -1,0 +1,309 @@
+.nav-for-purchase {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    margin: 0rem auto;
+    width: 5.5rem;
+    display: inline-block;
+}
+.main-section {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.your-orders {
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 52px;
+    font-family: "krub", sans-serif;
+    align-self: flex-start;
+    margin-top: 10rem;
+}
+.img-buy {
+    width: 8rem;
+}
+#number-input {
+    width: 4rem;
+    height: 2.5rem;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    text-align: center;
+    padding: 4px;
+    border: 3px solid #f85900;
+    border-radius: 3rem;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.043);
+    color: white;
+}
+
+#number-input:hover,
+#number-input:focus {
+    border-color: rgb(64, 198, 64);
+    outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+section {
+    max-width: 27rem;
+}
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 40fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 30rem;
+    border-bottom: 2px white solid;
+}
+.items-container > div {
+    margin: 1rem;
+}
+.text-and-numbers {
+    text-align: center;
+}
+.text-and-numbers > h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    white-space: wrap;
+}
+
+#list-of-platforms1 {
+    display: none;
+}
+#list-of-platforms1:checked ~ .plat-forms-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 10rem;
+    background-color: #3d3d3d;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    padding: 1rem;
+    z-index: 3;
+}
+.price-buy {
+    white-space: nowrap;
+}
+.price-platform-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 10rem;
+}
+.total-price-container {
+    display: flex;
+    justify-content: flex-start;
+}
+.total-price-container .tot-price:first-child {
+    margin-right: auto;
+}
+.total-price-container .tot-price:nth-child(2) {
+    margin-right: 1rem;
+}
+.tot-price {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 34px;
+}
+.tot-tax {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffffb6;
+    line-height: 34px;
+}
+.total-price-container .tot-tax:first-child {
+    margin-right: auto;
+}
+.total-price-container .tot-tax:nth-child(2) {
+    margin-right: 1rem;
+}
+
+.green {
+    background-color: rgb(26, 123, 26);
+    padding: 0.5rem 1.6rem;
+    margin-top: 1.4rem;
+    transition: 0.5s;
+    margin-left: auto;
+}
+.green:hover,
+.green-1:hover {
+    background-color: #f85900;
+}
+.btn-container {
+    display: flex;
+    margin-bottom: 5rem;
+}
+@media only screen and (max-width: 600px) {
+    .img-buy {
+        width: 7rem;
+    }
+    .text-and-numbers > h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .your-orders {
+        margin-left: 2rem;
+    }
+    #list-of-platforms1:checked ~ .plat-forms-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 10rem;
+        background-color: #3d3d3d;
+        height: auto;
+        border-radius: 8px;
+        position: absolute;
+        padding: 1rem;
+        z-index: 3;
+        left: 12rem;
+    }
+    .items-container > div {
+        margin: 0.4rem;
+    }
+}
+.main-last-page {
+    height: 100vh;
+}
+.header-txt {
+    display: block;
+    text-align: center;
+}
+.purchase-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+.header-txt > h1 > span,
+.header-txt > h1 > a > span {
+    color: #f85900;
+}
+.header-txt > h1 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 52px;
+    font-family: "krub", sans-serif;
+    margin-top: 4rem;
+}
+.header-txt > h1 > a {
+    text-decoration: none;
+    text-align: center;
+}
+.inputs-container-for-purchase {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.right-side > div {
+    display: inline-flex;
+    gap: 1rem;
+}
+.smal-inputs-container {
+    width: 5rem;
+}
+
+#month,
+#zip,
+#city,
+#year,
+#day,
+#ccv {
+    width: 6.4rem;
+}
+.purches-stage {
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+.purches-stage-img {
+    max-width: 18rem;
+    margin-left: -1.5rem;
+}
+.green-1 {
+    background-color: rgb(26, 123, 26);
+    padding: 0.5rem 1.6rem;
+    display: block;
+    text-align: center;
+    margin: 3rem auto 0 auto;
+    width: 8rem;
+    transition: 0.5s;
+}
+.green-1-1 {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    margin: 3rem auto 0 auto;
+    color: rgb(255, 255, 255);
+    width: auto;
+    transition: 0.5s;
+    border: 2px white solid;
+}
+.payment-container {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.payment-img {
+    width: 5rem;
+}
+.payment-img {
+    opacity: 0.5;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label .payment-img,
+.payment-img:hover {
+    opacity: 1;
+}
+.start-browsing {
+    margin: 2.5rem auto;
+}
+h2 {
+    margin-top: 1.5rem;
+}
+@media only screen and (max-width: 550px) {
+    .inputs-container-for-purchase {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    #zip,
+    #city,
+    #number {
+        margin-bottom: 1rem;
+    }
+    .payment-container {
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+}
+@media only screen and (max-height: 700px) and (max-width: 530px) {
+    .main-section {
+        margin: 0 auto 5rem auto;
+    }
+}
+@media only screen and (max-height: 530px) {
+    .main-last-page {
+        height: 150vh;
+    }
+    footer {
+        display: none;
+    }
+}
