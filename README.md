@@ -16,7 +16,9 @@ Stroe for people who are interested in gaming.
 
 This site has been created from scratch, including the icons, layouts, and everything on this page.
 
+
 In the home page, visitors to this store have the opportunity to both log in and sell their games. As they scroll down, they will be able to see the latest products added to the store using a REST API from WordPress.
+
 
 By clicking on the images, users will be directed to the specified product page, where they can find more information about the product, such as the price and game type. The "Buy Now" button will take users directly to the purchase page, where they can fill in the required information to complete the purchase.
 
