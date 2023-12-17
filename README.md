@@ -1,6 +1,6 @@
 # A Modern Online Store
 
-![Project Logo]([https://usercontent.one/wp/protofilioitems.alanbrim.no/wp-content/uploads/2023/12/blog-1.png](https://usercontent.one/wp/protofilioitems.alanbrim.no/wp-content/uploads/2023/12/image.png))
+![Project Logo](https://usercontent.one/wp/protofilioitems.alanbrim.no/wp-content/uploads/2023/12/image.png)
 Stroe for people who are interested in gaming.
 
 ## Table of Contents
